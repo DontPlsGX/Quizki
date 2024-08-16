@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="amountcontainer">
+      <div class="slider-container">
+        <label for="flashcards-amount">Number of flashcards: <span id="flashcards-value">5</span></label>
+        <input type="range" id="flashcards-amount" min="1" max="10" value="5" step="1">
+      </div>
+      <div class="slider-container">
+        <label for="quizzes-amount">Number of quizzes: <span id="quizzes-value">5</span></label>
+        <input type="range" id="quizzes-amount" min="1" max="10" value="5" step="1">
+      </div>
+      <button id = "confirmAmount" class = "button">Confirm Amount</button>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
