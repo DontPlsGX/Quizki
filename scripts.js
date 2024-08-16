@@ -1,5 +1,5 @@
 import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
-import * as pdfjsLib from './pdfjs-dist/webpack.mjs';
+import * as pdfjsLib from './node_modules/pdfjs-dist/webpack.mjs';
 
 const safetySettings = [
     {
