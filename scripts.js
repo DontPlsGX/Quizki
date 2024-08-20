@@ -19,7 +19,7 @@ const safetySettings = [
         threshold: HarmBlockThreshold.BLOCK_NONE,
     },
 ];  
-const API_KEY = "AIzaSyBhEtbUm6fLwvdXCjwASQycgeE9ZAAtJmg";
+const API_KEY = "PLACEHOLDER";
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", safetySettings});
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
